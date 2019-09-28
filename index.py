@@ -1,7 +1,9 @@
+# -*-coding:Latin-1 -*
+
 import pyttsx3
 import speech_recognition as sr
 import webbrowser as wb
-from SpeechGeneration import SpeechGeneration 
+from SpeechGeneration import SpeechGeneration
 # engine = pyttsx3.init()
 # engine.say("Bonjour monsieur. Cela fait un moment! il semblerait que les correcteurs holographique ne fonctionne pas.")
 # engine.say("Que puis-je faire pour vous ?")
