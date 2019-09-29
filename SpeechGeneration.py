@@ -1,11 +1,12 @@
 
-# -*-coding:Latin-1 -*
+# -*-coding:UTF-8 -*
 import pyttsx3
 import speech_recognition as sr
 from google.cloud import texttospeech
 from playsound import playsound
 import time
 import os
+import random
 class SpeechGeneration:
 
     def __init__(self):
@@ -14,7 +15,7 @@ class SpeechGeneration:
         self.r2 = sr.Recognizer()
         self.r3 = sr.Recognizer()
         self.client = texttospeech.TextToSpeechClient()
-        # os.system("export GOOGLE_APPLICATION_CREDENTIALS='/home/bousaidi/T�l�chargements/MyProject-37091e95e1fa.json'")
+        os.system("export GOOGLE_APPLICATION_CREDENTIALS='/home/bousaidi/Téléchargements/MyProject-37091e95e1fa.json'")
         # playsound('SFX/Open.wav')
         time.sleep(0.5)
         playsound("Eva/Bonjour.wav")
@@ -35,7 +36,15 @@ class SpeechGeneration:
             print(MyPhrase)   
         
             if 'Eva' in MyPhrase:
-                self.GetAudio("Que puis-je faire pour vous ?")
+
+                ListeReponse = [
+                    "Que puis-je faire pour vous ?",
+                    "Oui, Monsieur?",
+                    "Je suis là.",
+                    "Monsieur?",
+                    "Vous m'avez Appelé?"
+                ]
+                self.GetAudio(random.choice(ListeReponse))
                 time.sleep(1)
                 self.r2 = sr.Recognizer()
                 with sr.Microphone() as source:

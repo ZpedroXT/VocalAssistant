@@ -4,6 +4,9 @@ import pyttsx3
 import speech_recognition as sr
 import webbrowser as wb
 from SpeechGeneration import SpeechGeneration
+import os
+
+
 # engine = pyttsx3.init()
 # engine.say("Bonjour monsieur. Cela fait un moment! il semblerait que les correcteurs holographique ne fonctionne pas.")
 # engine.say("Que puis-je faire pour vous ?")
@@ -36,6 +39,6 @@ from SpeechGeneration import SpeechGeneration
 #             print("Error")
 #         except sr.RequestError as e:
 #             print("failed".format(e))
-
+os.system("export GOOGLE_APPLICATION_CREDENTIALS='/home/bousaidi/Téléchargements/MyProject-37091e95e1fa.json'")
 generation = SpeechGeneration()
 generation.Listen()
