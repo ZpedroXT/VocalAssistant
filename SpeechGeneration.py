@@ -14,12 +14,12 @@ class SpeechGeneration:
         self.r2 = sr.Recognizer()
         self.r3 = sr.Recognizer()
         self.client = texttospeech.TextToSpeechClient()
+        # os.system("export GOOGLE_APPLICATION_CREDENTIALS='/home/bousaidi/Téléchargements/MyProject-37091e95e1fa.json'")
+        # playsound('SFX/Open.wav')
+        time.sleep(0.5)
+        playsound("Eva/Bonjour.wav")
 
-        playsound('SFX/Open.wav')
-        self.GetAudio( "Bonjour Monsieur ?")
-        # os.system("espeak -v fr 'bonjour Monsieur'")
-        # self.engine.runAndWait()
-        playsound('SFX/ItsOK.wav')
+
 
     def Listen(self):
         
@@ -35,23 +35,24 @@ class SpeechGeneration:
             print(MyPhrase)   
         
             if 'Eva' in MyPhrase:
+                self.GetAudio("Que puis-je faire pour vous ?")
+                time.sleep(1)
                 self.r2 = sr.Recognizer()
                 with sr.Microphone() as source:
 
-                    # self.engine.say("Oui monsieur ?")
-                    # self.engine.runAndWait()
-                    # os.system("espeak -v fr 'Oui Monsieur?'")
-                    self.GetAudio("oui Monsieur ?")
+
+
                     audio = self.r2.listen(source)
 
                 try:
                     get = self.r2.recognize_google(audio, language="fr-FR")
                     print(get)
-                    self.engine.say("Que puis-je faire pour vous ?")
-                    self.engine.runAndWait()
-                    # wb.get().open_new(url+get)
+                    self.GetAudio("Je m'en occupe! ")
+
+
                 except sr.UnknownValueError:
-                     self.Listen()
+                    print('erreur')
+                    self.Listen()
                 except sr.RequestError as e:
                     self.Listen()
                     print("failed".format(e))
@@ -83,9 +84,11 @@ class SpeechGeneration:
         response = self.client.synthesize_speech(synthesis_input, voice, audio_config)
 
         # The response's audio_content is binary.
-        with open('output.wav', 'wb') as out:
+        with open('Eva/output.wav', 'wb') as out:
             # Write the response to the output file.
             out.write(response.audio_content)
             print('Audio content written to file "output.mp3"')
 
-        playsound('ouput.wav')
+        playsound("Eva/output.wav")
+
+
