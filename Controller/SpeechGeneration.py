@@ -37,7 +37,7 @@ class SpeechGeneration:
             MyPhrase = self.r2.recognize_google(audio, language="fr-FR")
             print(MyPhrase)   
             #Si on detecte le hotWord Eva Elle nous repond puis attend l'ordre
-            if 'Eva' in MyPhrase:
+            if 'Eva' in MyPhrase or 'Jarvis' in MyPhrase:
 
                 ListeReponse = [
                     "Que puis-je faire pour vous ?",

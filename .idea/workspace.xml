@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b102f899-8a86-4542-8982-346b69fe7b7f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Controller/DateInformation.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Controller/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/__init__.py" />
+    <list default="true" id="b102f899-8a86-4542-8982-346b69fe7b7f" name="Default" comment="Correction de la voix de la dame&#10;Correction de l'architecture des dossiers&#10;Creation d'un design pattern pour que ce soit moins moche">
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/DataSet/Order/answer" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/DataSet/Order/categoryOrder" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/DataSet/Order/order" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/DataSet/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/DataSet/insertData.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Eva/output.wav" afterPath="$PROJECT_DIR$/Eva/output.wav" />
-      <change beforePath="$PROJECT_DIR$/SpeechGeneration.py" afterPath="$PROJECT_DIR$/Controller/SpeechGeneration.py" />
-      <change beforePath="$PROJECT_DIR$/index.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controller/SpeechGeneration.py" afterPath="$PROJECT_DIR$/Controller/SpeechGeneration.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,24 +19,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
+      <file leaf-file-name="DateInformation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controller/DateInformation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="109" lean-forward="false" selection-start-line="6" selection-start-column="109" selection-end-line="6" selection-end-column="109" />
+            <state relative-caret-position="270">
+              <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="16" />
               <folding>
-                <element signature="e#24#80#0" expanded="true" />
+                <element signature="e#22#37#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -44,20 +34,50 @@
       <file leaf-file-name="SpeechGeneration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/SpeechGeneration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="87" column="31" lean-forward="false" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+            <state relative-caret-position="643">
+              <caret line="39" column="56" lean-forward="false" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
               <folding>
-                <element signature="e#23#37#0" expanded="true" />
+                <element signature="e#22#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DateInformation.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controller/DateInformation.py">
+      <file leaf-file-name="insertData.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/DataSet/insertData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="1134">
+              <caret line="72" column="33" lean-forward="false" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="answer" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/DataSet/Order/answer">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/DataSet/Order/order">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categoryOrder" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/DataSet/Order/categoryOrder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -78,7 +98,17 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Yassine &lt;yassine.bousaidi@hotmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -87,8 +117,12 @@
         <option value="$PROJECT_DIR$/SpeechGeneration.py" />
         <option value="$PROJECT_DIR$/Controller/__init__.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/Controller/SpeechGeneration.py" />
         <option value="$PROJECT_DIR$/Controller/DateInformation.py" />
+        <option value="$PROJECT_DIR$/test/DataSet/insertData.py" />
+        <option value="$PROJECT_DIR$/Controller/SpeechGeneration.py" />
+        <option value="$PROJECT_DIR$/test/DataSet/Order/answer" />
+        <option value="$PROJECT_DIR$/test/DataSet/Order/categoryOrder" />
+        <option value="$PROJECT_DIR$/test/DataSet/Order/order" />
       </list>
     </option>
   </component>
@@ -113,6 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -126,18 +161,39 @@
               <item name="VocalAssistant" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="VocalAssistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VocalAssistant" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VocalAssistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VocalAssistant" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="DataSet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VocalAssistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VocalAssistant" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="DataSet" type="462c0819:PsiDirectoryNode" />
+              <item name="Order" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/test/DataSet" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Controller" />
       <recent name="$PROJECT_DIR$" />
@@ -194,22 +250,37 @@
       <option name="presentableId" value="Default" />
       <updated>1569702192508</updated>
     </task>
+    <task id="LOCAL-00001" summary="Correction de la voix de la dame&#10;Correction de l'architecture des dossiers&#10;Creation d'un design pattern pour que ce soit moins moche">
+      <created>1569908366044</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569908366045</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Correction de la voix de la dame&#10;Correction de l'architecture des dossiers&#10;Creation d'un design pattern pour que ce soit moins moche">
+      <created>1569910694347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569910694347</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="927" extended-state="6" />
+    <frame x="28" y="13" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18888289" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3797314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37909186" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -222,6 +293,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Correction de la voix de la dame&#10;Correction de l'architecture des dossiers&#10;Creation d'un design pattern pour que ce soit moins moche" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction de la voix de la dame&#10;Correction de l'architecture des dossiers&#10;Creation d'un design pattern pour que ce soit moins moche" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -231,9 +306,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
           <caret line="41" column="109" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="109" />
-          <folding>
-            <element signature="e#24#80#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -242,7 +314,7 @@
         <state relative-caret-position="684">
           <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
           <folding>
-            <element signature="e#23#37#0" expanded="true" />
+            <element signature="e#22#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -251,9 +323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="45" />
-          <folding>
-            <element signature="e#24#80#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -262,7 +331,7 @@
         <state relative-caret-position="864">
           <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
           <folding>
-            <element signature="e#23#37#0" expanded="true" />
+            <element signature="e#22#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -271,9 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="45" />
-          <folding>
-            <element signature="e#24#80#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -282,7 +348,7 @@
         <state relative-caret-position="396">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="e#23#37#0" expanded="true" />
+            <element signature="e#22#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -291,9 +357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#80#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -302,8 +365,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#23#37#0" expanded="true" />
+            <element signature="e#22#36#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Bureau/Credential/MyProject-37091e95e1fa.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -315,38 +385,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Bureau/Credential/MyProject-37091e95e1fa.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="109" lean-forward="false" selection-start-line="6" selection-start-column="109" selection-end-line="6" selection-end-column="109" />
-          <folding>
-            <element signature="e#24#80#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/DataSet/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/DataSet/insertData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="72" column="33" lean-forward="false" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/SpeechGeneration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="87" column="31" lean-forward="false" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+        <state relative-caret-position="643">
+          <caret line="39" column="56" lean-forward="false" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
           <folding>
-            <element signature="e#23#37#0" expanded="true" />
+            <element signature="e#22#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/DateInformation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#22#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/DataSet/Order/categoryOrder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/DataSet/Order/answer">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/DataSet/Order/order">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
