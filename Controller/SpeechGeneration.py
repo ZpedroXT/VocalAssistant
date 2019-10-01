@@ -1,4 +1,4 @@
-
+#
 # -*-coding:UTF-8 -*
 import pyttsx3
 import speech_recognition as sr
@@ -11,30 +11,32 @@ class SpeechGeneration:
 
     def __init__(self):
 
+        #Ici on initialise Les messages audio ainsi que le module de reconnaissance vocal
+
         self.r1 = sr.Recognizer()
         self.r2 = sr.Recognizer()
         self.r3 = sr.Recognizer()
         self.client = texttospeech.TextToSpeechClient()
-        os.system("export GOOGLE_APPLICATION_CREDENTIALS='/home/bousaidi/Téléchargements/MyProject-37091e95e1fa.json'")
-        # playsound('SFX/Open.wav')
+
         time.sleep(0.5)
         playsound("Eva/Bonjour.wav")
 
 
 
     def Listen(self):
-        
+        #on se met sur écoute
         with sr.Microphone() as source:
        
             print("Lancement")
             
             audio = self.r3.listen(source)
            
-        
+        #Si on a une entrée audio
         try:
+            #On va utiliser le module Speech to text pour transformer notre voix en texte
             MyPhrase = self.r2.recognize_google(audio, language="fr-FR")
             print(MyPhrase)   
-        
+            #Si on detecte le hotWord Eva Elle nous repond puis attend l'ordre
             if 'Eva' in MyPhrase:
 
                 ListeReponse = [
@@ -42,7 +44,8 @@ class SpeechGeneration:
                     "Oui, Monsieur?",
                     "Je suis là.",
                     "Monsieur?",
-                    "Vous m'avez Appelé?"
+                    "Vous m'avez Appelé?",
+                    "M'auriez vous appelé?"
                 ]
                 self.GetAudio(random.choice(ListeReponse))
                 time.sleep(1)
@@ -75,14 +78,18 @@ class SpeechGeneration:
  
     def GetAudio(self,phrase):
 
+
+
+
         # Set the text input to be synthesized
         synthesis_input = texttospeech.types.SynthesisInput(text=""+ phrase+"")
 
-        # Build the voice request, select the language code ("en-US") and the ssml
-        # voice gender ("neutral")
+        # Build the voice request, select the language code ("fr-FR") and the ssml
+        # voice gender ("female")
         voice = texttospeech.types.VoiceSelectionParams(
             language_code='fr-FR',
-            ssml_gender=texttospeech.enums.SsmlVoiceGender.NEUTRAL)
+            name="fr-FR-Wavenet-C",
+            ssml_gender=texttospeech.enums.SsmlVoiceGender.FEMALE)
 
         # Select the type of audio file you want returned
         audio_config = texttospeech.types.AudioConfig(
