@@ -7,6 +7,7 @@ from playsound import playsound
 import time
 import os
 import random
+from Model.Answer import Answer
 class SpeechGeneration:
 
     def __init__(self):
@@ -17,6 +18,9 @@ class SpeechGeneration:
         self.r2 = sr.Recognizer()
         self.r3 = sr.Recognizer()
         self.client = texttospeech.TextToSpeechClient()
+        self.ListeReponse = Answer().getAllAnswers("listen")
+        self.ListeLoad = Answer().getAllAnswers("load")
+        self.ListeLoad = Answer().getAllRecognition()
 
         time.sleep(0.5)
         playsound("Eva/Bonjour.wav")
@@ -37,17 +41,10 @@ class SpeechGeneration:
             MyPhrase = self.r2.recognize_google(audio, language="fr-FR")
             print(MyPhrase)   
             #Si on detecte le hotWord Eva Elle nous repond puis attend l'ordre
-            if 'Eva' in MyPhrase or 'Jarvis' in MyPhrase:
+            if 'Eva' in MyPhrase or 'Jarvis' or "Camelia" in MyPhrase:
 
-                ListeReponse = [
-                    "Que puis-je faire pour vous ?",
-                    "Oui, Monsieur?",
-                    "Je suis là.",
-                    "Monsieur?",
-                    "Vous m'avez Appelé?",
-                    "M'auriez vous appelé?"
-                ]
-                self.GetAudio(random.choice(ListeReponse))
+
+                self.GetAudio(random.choice(self.ListeReponse))
                 time.sleep(1)
                 self.r2 = sr.Recognizer()
                 with sr.Microphone() as source:
@@ -59,11 +56,12 @@ class SpeechGeneration:
                 try:
                     get = self.r2.recognize_google(audio, language="fr-FR")
                     print(get)
-                    self.GetAudio("Je m'en occupe! ")
+                    self.GetAudio(random.choice(self.ListeLoad))
+
 
 
                 except sr.UnknownValueError:
-                    print('erreur')
+                    self.GetAudio("Il semblerait que je n'ai pas très bien compris, pourriez-vous répéter")
                     self.Listen()
                 except sr.RequestError as e:
                     self.Listen()
@@ -71,7 +69,8 @@ class SpeechGeneration:
             else:
                 self.Listen()
         except sr.UnknownValueError:
-           self.Listen()
+            self.GetAudio("Il semblerait que je n'ai pas très bien compris, pourriez-vous répéter")
+            self.Listen()
         except sr.RequestError as e:
             self.Listen()
             print("failed".format(e))
@@ -82,7 +81,7 @@ class SpeechGeneration:
 
 
         # Set the text input to be synthesized
-        synthesis_input = texttospeech.types.SynthesisInput(text=""+ phrase+"")
+        synthesis_input = texttospeech.types.SynthesisInput(text=""+phrase+"")
 
         # Build the voice request, select the language code ("fr-FR") and the ssml
         # voice gender ("female")

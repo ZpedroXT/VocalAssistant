@@ -125,17 +125,42 @@ class InsertData:
             #print(line)
             elementPhrase = line.split("|")
             # print(elementPhrase[0])
-            print("nom de la méthode "+elementPhrase[1])
 
             myId = self.findMethodId(elementPhrase[1])
-            print(myId)
+
             sql = "INSERT INTO command (sequence, idRecognition ) VALUES (%s, %s)"
             val = (elementPhrase[0], myId)
             mycursor.execute(sql, val)
             self.mydb.commit()
             line = f.readline()
         f.close()
+        self.pushAnswer()
 
+
+    def pushAnswer(self):
+        self.deleteAllColumn(1, "answer")
+        mycursor = self.mydb.cursor()
+        # try:
+
+        f = open("./../test/DataSet/Order/answer", "r")
+
+        line = f.readline()
+        while line:
+            # print(line)
+            elementPhrase = line.split("|")
+            # print(elementPhrase[0])
+            # print("nom de la méthode " + elementPhrase[1])
+
+            myId = self.findAnswerId(elementPhrase[0])
+            if(myId == 0):
+
+                sql = "INSERT INTO answer (sequence, type ) VALUES (%s, %s)"
+                val = (elementPhrase[0], elementPhrase[1])
+                print(val)
+                mycursor.execute(sql, val)
+                self.mydb.commit()
+                line = f.readline()
+        f.close()
 
     def findMethodId(self,methodeName):
         mycursor = self.mydb.cursor()
@@ -143,7 +168,16 @@ class InsertData:
         sql = "SELECT * FROM recognition where  methodName = %s"
         mycursor.execute(sql, (methodeName.strip(),))
         myresult = mycursor.fetchone()
-        print(myresult[0])
+        return  myresult[0]
+
+
+
+    def findAnswerId(self,methodeName):
+        mycursor = self.mydb.cursor()
+
+        sql = "SELECT count(*) FROM answer where  sequence = %s"
+        mycursor.execute(sql, (methodeName,))
+        myresult = mycursor.fetchone()
         return  myresult[0]
 
 
