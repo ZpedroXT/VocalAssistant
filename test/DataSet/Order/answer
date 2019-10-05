@@ -1,7 +1,10 @@
-Que puis-je faire pour vous ?|réponse
-Oui, Monsieur?|réponse
-Je suis là.|réponse
-Monsieur?|réponse
-Vous m'avez Appelé?|réponse
-M'auriez vous appelé?|réponse
-
+Que puis-je faire pour vous ?|listen
+Oui, Monsieur?|listen
+Je suis là.|listen
+Monsieur?|listen
+Vous m'avez Appelé?|listen
+M'auriez vous appelé?|listen
+Oui patron?|listen
+Oui boss?|listen
+Un instant s'il vous plait.|load
+je m'en occupe.|load
