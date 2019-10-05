@@ -1,5 +1,5 @@
-réponse
-jour
-rappel
-présentation
-getToday
+getDayAtdate|DateInformation
+getDifferenceBetweenDate|DateInformation
+getToday|DateInformation
+getTomorrow|DateInformation
+getYesterday|DateInformation

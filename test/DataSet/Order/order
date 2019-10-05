@@ -1,7 +1,6 @@
-quel jour sommes-nous
-quel jour serons-nous demain
-quel jour etions-nous hier
-donne-moi le jour d'hier
-Quel jour etions-nous hier
-Dans combien de jour nous serons le
-
+quel jour sommes-nous|getToday
+quel jour serons-nous demain|getTomorrow
+quel jour etions-nous hier|getYesterday
+donne-moi le jour d'hier|getYesterday
+Quel jour etions-nous hier|getYesterday
+Dans combien de jour nous serons le|getDayAtdate
