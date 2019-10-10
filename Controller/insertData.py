@@ -182,13 +182,3 @@ class InsertData:
 
 
 
-    # Insertion = InsertData()
-#
-# Insertion.insertAnswer()
-# from difflib import SequenceMatcher
-#
-# a = "donne moi le jour de demain"
-# b = "dis moi quel jour nous sommes "
-#
-# ratio = SequenceMatcher(None, a, b).ratio()
-# print(ratio)
