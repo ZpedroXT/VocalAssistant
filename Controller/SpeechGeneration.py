@@ -55,10 +55,13 @@ class SpeechGeneration:
 
                 try:
                     getSequence = self.r2.recognize_google(audio, language="fr-FR")
-                    print(getSequence)
-                    self.GetAudio(random.choice(self.ListeLoad))
+                    print("my sequence"+getSequence)
+                    #self.GetAudio(random.choice(self.ListeLoad))
 
                     command = CommandSequence(getSequence)
+                    AllInformation = command.guessRecognition(getSequence)
+                    self.GetAudio(command.executeSequence(AllInformation))
+                    self.Listen()
 
 
 
@@ -72,14 +75,16 @@ class SpeechGeneration:
                     self.Listen()
                     print("failed".format(e))
             else:
+                print("mot clé eva non detecté")
                 self.Listen()
         except sr.UnknownValueError:
             self.GetAudio("Il semblerait que je n'ai pas très bien compris, pourriez-vous répéter")
             self.Listen()
         except sr.RequestError as e:
-            self.Listen()
             print("failed".format(e))
- 
+
+            self.Listen()
+
     def GetAudio(self,phrase):
 
 

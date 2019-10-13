@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b102f899-8a86-4542-8982-346b69fe7b7f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Controller/CommandSequence.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Model/Command.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Controller/CommandSequence.py" afterPath="$PROJECT_DIR$/Controller/CommandSequence.py" />
+      <change beforePath="$PROJECT_DIR$/Controller/DateInformation.py" afterPath="$PROJECT_DIR$/Controller/DateInformation.py" />
       <change beforePath="$PROJECT_DIR$/Controller/SpeechGeneration.py" afterPath="$PROJECT_DIR$/Controller/SpeechGeneration.py" />
-      <change beforePath="$PROJECT_DIR$/Controller/insertData.py" afterPath="$PROJECT_DIR$/Controller/insertData.py" />
-      <change beforePath="$PROJECT_DIR$/test/DataSet/Order/answer" afterPath="$PROJECT_DIR$/test/DataSet/Order/answer" />
+      <change beforePath="$PROJECT_DIR$/Eva/output.wav" afterPath="$PROJECT_DIR$/Eva/output.wav" />
       <change beforePath="$PROJECT_DIR$/test/DataSet/Order/order" afterPath="$PROJECT_DIR$/test/DataSet/Order/order" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="SpeechGeneration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/SpeechGeneration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="45" />
+            <state relative-caret-position="288">
+              <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
               <folding>
                 <element signature="e#22#36#0" expanded="true" />
               </folding>
@@ -31,11 +30,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandSequence.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommandSequence.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/CommandSequence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+              <folding>
+                <element signature="e#21#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DateInformation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controller/DateInformation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="29" column="99" lean-forward="false" selection-start-line="29" selection-start-column="99" selection-end-line="29" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -44,7 +55,7 @@
       <file leaf-file-name="insertData.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/insertData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2160">
+            <state relative-caret-position="859">
               <caret line="120" column="8" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="54" />
               <folding />
             </state>
@@ -81,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Command.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Command.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/Command.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
                 <element signature="e#21#56#0" expanded="true" />
               </folding>
@@ -96,8 +107,8 @@
       <file leaf-file-name="order" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/DataSet/Order/order">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+            <state relative-caret-position="198">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -143,18 +154,18 @@
         <option value="$PROJECT_DIR$/Controller/__init__.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/test/DataSet/insertData.py" />
-        <option value="$PROJECT_DIR$/Controller/DateInformation.py" />
         <option value="$PROJECT_DIR$/test/DataSet/Order/categoryOrder" />
         <option value="$PROJECT_DIR$/Model/__init__.py" />
         <option value="$PROJECT_DIR$/Controller/WatchFile.py" />
         <option value="$PROJECT_DIR$/Model/Answer.py" />
         <option value="$PROJECT_DIR$/Controller/Command.py" />
-        <option value="$PROJECT_DIR$/Controller/SpeechGeneration.py" />
         <option value="$PROJECT_DIR$/Controller/insertData.py" />
-        <option value="$PROJECT_DIR$/test/DataSet/Order/order" />
         <option value="$PROJECT_DIR$/Model/Command.py" />
-        <option value="$PROJECT_DIR$/Controller/CommandSequence.py" />
         <option value="$PROJECT_DIR$/test/DataSet/Order/answer" />
+        <option value="$PROJECT_DIR$/Controller/CommandSequence.py" />
+        <option value="$PROJECT_DIR$/Controller/SpeechGeneration.py" />
+        <option value="$PROJECT_DIR$/Controller/DateInformation.py" />
+        <option value="$PROJECT_DIR$/test/DataSet/Order/order" />
       </list>
     </option>
   </component>
@@ -179,13 +190,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="VocalAssistant" type="b2602c69:ProjectViewProjectNode" />
               <item name="VocalAssistant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VocalAssistant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VocalAssistant" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VocalAssistant" type="b2602c69:ProjectViewProjectNode" />
@@ -214,12 +230,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/bousaidi/PycharmProjects/VocalAssistant/Controller/DateInformation.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -317,23 +334,30 @@
       <option name="project" value="LOCAL" />
       <updated>1570297147764</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Comprehesion des phrases debut de reel test">
+      <created>1570741595793</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570741595793</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="28" y="13" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24446844" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44561774" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -413,7 +437,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#21#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -656,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/DateInformation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -684,14 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/insertData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="120" column="8" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -708,30 +719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/SpeechGeneration.py">
+    <entry file="file://$PROJECT_DIR$/Controller/DateInformation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="45" />
-          <folding>
-            <element signature="e#22#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Command.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/DataSet/Order/order">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        <state relative-caret-position="234">
+          <caret line="29" column="99" lean-forward="false" selection-start-line="29" selection-start-column="99" selection-end-line="29" selection-end-column="99" />
           <folding />
         </state>
       </provider>
@@ -744,11 +735,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/DataSet/Order/order">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/insertData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="859">
+          <caret line="120" column="8" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/SpeechGeneration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+          <folding>
+            <element signature="e#22#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/CommandSequence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="288">
+          <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding>
+            <element signature="e#21#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Command.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

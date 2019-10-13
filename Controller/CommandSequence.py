@@ -1,27 +1,43 @@
 # -*-coding:UTF-8 -*
-
 from Model.Command import Command as cmd
+# from Controller.DateInformation import DateInformation
+import importlib
 class CommandSequence:
 
     def __init__(self, command):
-        self.command = command
-
-        self.guessRecognition()
-
+        # self.command = command
+        print("initialisation ok")
 
 
-    def guessRecognition(self):
+
+
+
+    def guessRecognition(self,command):
         commandInstance = cmd()
-        bestCommand = commandInstance.compareCommands(self.command)
-        print(bestCommand)
+        bestCommand = commandInstance.compareCommands(command)
+
         takeEveryInformation = commandInstance.getAllInformation(bestCommand)
-        self.executeSequence(takeEveryInformation)
+        return takeEveryInformation
 
 
     def executeSequence(self,command):
+        print("Mon instanciation"+str(command))
+
+        maClasse  = command[7].rstrip()
+        maMethode = command[4]
+        print("Ma class " +maClasse)
+        print("ma methode " + maMethode)
+
+        module = importlib.import_module("Controller."+maClasse)
+        print(module)
+        classLocation = getattr(module, maClasse)
+
+        instance = classLocation()
+
+        return getattr(instance, maMethode)()
 
         #ici on créera l'execution du code demandé
-        return 0
+        return True
 
 
 
