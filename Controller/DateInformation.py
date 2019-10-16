@@ -6,7 +6,7 @@ import locale
 class DateInformation:
 
 
-    def __init__(self, myPhrase):
+    def __init__(self, ):
         locale.setlocale(locale.LC_TIME, '')
         #on pensera a recuperer l'information dans myPhrase et voir à quel methode elle est relié.
         print("ok")
@@ -25,9 +25,9 @@ class DateInformation:
     def getTomorrow(self):
         today = datetime.datetime.today()
         tomorrow = today + datetime.timedelta(1)
-        print ("demain nous serons le: "+datetime.datetime.strftime(tomorrow, '%d %B %Y'))
+        print ("demain nous devrions être le: "+datetime.datetime.strftime(tomorrow, '%d %B %Y'))
 
-        return "demain nous serons le: "+datetime.datetime.strftime(tomorrow, '%d %B %Y')
+        return "demain nous devrions être le: "+datetime.datetime.strftime(tomorrow, '%d %B %Y')+" Monsieur"
 
     def getYesterday(self):
         today = datetime.datetime.today()

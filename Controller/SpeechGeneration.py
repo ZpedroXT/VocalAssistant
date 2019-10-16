@@ -8,6 +8,7 @@ import time
 import os
 import random
 from Model.Answer import Answer
+from Controller.CommandSequence import CommandSequence
 class SpeechGeneration:
 
     def __init__(self):
@@ -20,7 +21,6 @@ class SpeechGeneration:
         self.client = texttospeech.TextToSpeechClient()
         self.ListeReponse = Answer().getAllAnswers("listen")
         self.ListeLoad = Answer().getAllAnswers("load")
-        self.ListeLoad = Answer().getAllRecognition()
 
         time.sleep(0.5)
         playsound("Eva/Bonjour.wav")
@@ -54,9 +54,17 @@ class SpeechGeneration:
                     audio = self.r2.listen(source)
 
                 try:
-                    get = self.r2.recognize_google(audio, language="fr-FR")
-                    print(get)
-                    self.GetAudio(random.choice(self.ListeLoad))
+                    getSequence = self.r2.recognize_google(audio, language="fr-FR")
+                    print("my sequence"+getSequence)
+                    #self.GetAudio(random.choice(self.ListeLoad))
+
+                    command = CommandSequence(getSequence)
+                    AllInformation = command.guessRecognition(getSequence)
+                    self.GetAudio(command.executeSequence(AllInformation))
+                    self.Listen()
+
+
+
 
 
 
@@ -67,14 +75,16 @@ class SpeechGeneration:
                     self.Listen()
                     print("failed".format(e))
             else:
+                print("mot clé eva non detecté")
                 self.Listen()
         except sr.UnknownValueError:
             self.GetAudio("Il semblerait que je n'ai pas très bien compris, pourriez-vous répéter")
             self.Listen()
         except sr.RequestError as e:
-            self.Listen()
             print("failed".format(e))
- 
+
+            self.Listen()
+
     def GetAudio(self,phrase):
 
 
