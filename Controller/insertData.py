@@ -15,7 +15,7 @@ class InsertData:
         )
 
 
-    def SaveMethodName(self, myFile):
+    def     SaveMethodName(self, myFile):
 
         self.deleteAllColumn(1, "recognition")
         mycursor = self.mydb.cursor()

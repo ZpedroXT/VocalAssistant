@@ -21,12 +21,9 @@ class CommandSequence:
 
 
     def executeSequence(self,command):
-        print("Mon instanciation"+str(command))
 
         maClasse  = command[7].rstrip()
         maMethode = command[4]
-        print("Ma class " +maClasse)
-        print("ma methode " + maMethode)
 
         module = importlib.import_module("Controller."+maClasse)
         print(module)

@@ -45,14 +45,26 @@ class Command:
                 print(ratio)
 
         commandToCreate = [baseCommand,bestCommand[2]]
-        # print(bestCommand)
-        print("commande de base: "+baseCommand)
-        print('Meilleur match: ' + bestCommand[1])
+        print(bestCommand)
+        # print("commande de base: "+baseCommand)
+        # print('Meilleur match: ' + bestCommand[1])
 
-        if(ratio != 1 and ratio >= 0.50):
-            self.createCommand(commandToCreate)
+        if self.isExistingCommand(baseCommand) == 0:
+            if(ratio != 1 and ratio >= 0.50):
+                print("Ajout d'une ligne à la liste")
+                self.createCommand(commandToCreate)
 
         return bestCommand
+
+    def isExistingCommand(self,command):
+        sql = "SELECT count(*) FROM command where sequence LIKE %s"
+        adr = (command,)
+
+        self.mycursor.execute(sql, adr)
+
+        myresult = self.mycursor.fetchone()
+        print("Ma commande ici :"+command)
+        return myresult[0]
 
 
 
@@ -66,8 +78,16 @@ class Command:
             val = (command[0],command[1])
             self.mycursor.execute(sql, val)
             self.mydb.commit()
+
+            sql = "SELECT DISTINCT * FROM  recognition where id = %s"
+            val = (command[1],)
+            self.mycursor.execute(sql, val)
+
+            myresult = self.mycursor.fetchone()
+            print("\n\n\n\nmy result :")
+            print(myresult)
             with  open("./test/DataSet/Order/order", "a") as file:
-                file.write("\n"+command[0]+'|'+ str(command[1]))
+                file.write("\n"+command[0]+'|'+ str(myresult[1]))
 
         except:
             print('elle existe deja en base de donnée')

@@ -4,15 +4,17 @@ quel jour etions-nous hier|getYesterday
 donne-moi le jour d'hier|getYesterday
 Quel jour etions-nous hier|getYesterday
 Dans combien de jour nous serons le|getDayAtdate
-dis-moi quel jour nous sommes|3
-dis-moi comment tu vas|3
-dis-moi quel jour nous sommes|3
-dis-moi quelle date nous sommes|3
-dis-moi quel jour nous sommes|3
-quel jour nous sommes|3
-dis-moi quel jour nous sommes|3
-quel jour nous sommes|3
-dis-moi quel jour nous sommes|3
-quel jour nous sommes|3
-quel jour serons-nous demain|4
-dis-moi quel jour nous serons demain|4
+dis-moi quelle date nous sommes|getToday
+quel jour serons-nous demain|getTomorrow
+dis-moi quel jour nous serons demain|getTomorrow
+quel jour sommes-nous aujourd'hui|getToday
+dis-moi quel jour nous sommes aujourd'hui|getToday
+dis-moi quel jour nous sommes|getToday
+qui est Eva|mySelfPresentation
+dis-moi qui est Eva|mySelfPresentation
+dis-moi qui es-tu|mySelfPresentation
+qui es-tu|mySelfPresentation
+qui suis-je|getPresentation
+présente-moi|getPresentation
+dis-moi qui je suis|getPresentation
+dis-moi qui suis-je|getPresentation

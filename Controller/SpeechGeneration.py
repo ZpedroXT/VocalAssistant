@@ -61,6 +61,7 @@ class SpeechGeneration:
                     command = CommandSequence(getSequence)
                     AllInformation = command.guessRecognition(getSequence)
                     self.GetAudio(command.executeSequence(AllInformation))
+                    time.sleep(3)
                     self.Listen()
 
 
