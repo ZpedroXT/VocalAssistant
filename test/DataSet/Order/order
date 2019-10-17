@@ -18,3 +18,5 @@ qui suis-je|getPresentation
 présente-moi|getPresentation
 dis-moi qui je suis|getPresentation
 dis-moi qui suis-je|getPresentation
+qui es-tu qui es-tu|mySelfPresentation
+qui suis-je qui suis-je|getPresentation
