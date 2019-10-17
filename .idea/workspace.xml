@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Controller/Boss.py" afterPath="$PROJECT_DIR$/Controller/Boss.py" />
       <change beforePath="$PROJECT_DIR$/Eva/output.wav" afterPath="$PROJECT_DIR$/Eva/output.wav" />
-      <change beforePath="$PROJECT_DIR$/test/DataSet/Order/answer" afterPath="$PROJECT_DIR$/test/DataSet/Order/answer" />
-      <change beforePath="$PROJECT_DIR$/test/DataSet/Order/categoryOrder" afterPath="$PROJECT_DIR$/test/DataSet/Order/categoryOrder" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="Boss.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controller/Boss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+            <state relative-caret-position="486">
+              <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -290,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571327645902</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="v1.1.7 Eva">
+      <created>1571327804356</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571327804356</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -324,7 +329,8 @@
     <MESSAGE value="Comprehesion des phrases debut de reel test" />
     <MESSAGE value="v1.0 Eva" />
     <MESSAGE value="v1.1 Eva" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.1 Eva" />
+    <MESSAGE value="v1.1.7 Eva" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.1.7 Eva" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -716,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Boss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        <state relative-caret-position="486">
+          <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
           <folding />
         </state>
       </provider>

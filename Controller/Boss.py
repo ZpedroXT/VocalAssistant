@@ -29,12 +29,13 @@ class Boss:
     def mySelfPresentation(self):
         whoIam = self.whoEva()
         whoIam = random.choice(whoIam)
+        print(whoIam)
         return whoIam[1]
 
 
     def whoIam(self):
-        sql = "SELECT * FROM answer where type = %s "
-        adr = ("%whoEva%",)
+        sql = "SELECT * FROM answer where type like %s "
+        adr = ("%whoIam%",)
 
         self.mycursor.execute(sql, adr)
 
