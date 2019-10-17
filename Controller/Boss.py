@@ -34,7 +34,7 @@ class Boss:
 
     def whoIam(self):
         sql = "SELECT * FROM answer where type = %s "
-        adr = ("whoIam",)
+        adr = ("%whoEva%",)
 
         self.mycursor.execute(sql, adr)
 
