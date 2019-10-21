@@ -32,7 +32,7 @@ class SpeechGeneration:
         with sr.Microphone() as source:
        
             print("Lancement")
-            
+            # audio = self.r3.adjust_for_ambient_noise(source)
             audio = self.r3.listen(source)
            
         #Si on a une entrée audio
@@ -41,52 +41,71 @@ class SpeechGeneration:
             MyPhrase = self.r2.recognize_google(audio, language="fr-FR")
             print(MyPhrase)   
             #Si on detecte le hotWord Eva Elle nous repond puis attend l'ordre
-            if 'Eva' in MyPhrase or 'Jarvis' or "Camelia" in MyPhrase:
+            if 'Eva' in MyPhrase or 'Jarvis' or "Bonjour" in MyPhrase:
 
 
-                self.GetAudio(random.choice(self.ListeReponse))
+                uselessWords = ["Bonjour","bonjour","Eva","Salut","salut"]
                 time.sleep(1)
-                self.r2 = sr.Recognizer()
-                with sr.Microphone() as source:
+                for uselessWord in uselessWords:
+                    MyPhrase = MyPhrase.replace(uselessWord,"")
 
+                if (MyPhrase.strip() != ""):
+                    self.GetAudio("Un instant Monsieur")
+                    return  self.doIt(MyPhrase)
+                self.GetAudio(random.choice(self.ListeReponse))
+                time.sleep(2)
+                return self.readyToGetOrder()
 
-
-                    audio = self.r2.listen(source)
-
-                try:
-                    getSequence = self.r2.recognize_google(audio, language="fr-FR")
-                    print("my sequence"+getSequence)
-                    #self.GetAudio(random.choice(self.ListeLoad))
-
-                    command = CommandSequence(getSequence)
-                    AllInformation = command.guessRecognition(getSequence)
-                    self.GetAudio(command.executeSequence(AllInformation))
-                    time.sleep(3)
-                    self.Listen()
-
-
-
-
-
-
-                except sr.UnknownValueError:
-                    self.GetAudio("Il semblerait que je n'ai pas très bien compris, pourriez-vous répéter")
-                    self.Listen()
-                except sr.RequestError as e:
-                    self.Listen()
-                    print("failed".format(e))
             else:
                 print("mot clé eva non detecté")
-                self.Listen()
+                return self.Listen()
         except sr.UnknownValueError:
             self.GetAudio("Il semblerait que je n'ai pas très bien compris, pourriez-vous répéter")
-            self.Listen()
+            return self.Listen()
         except sr.RequestError as e:
             print("failed".format(e))
 
+            return self.Listen()
+
+
+    def readyToGetOrder(self):
+        self.r2 = sr.Recognizer()
+        with sr.Microphone() as source:
+
+            # audio = self.r2.adjust_for_ambient_noise(source)
+            audio = self.r2.listen(source)
+
+        try:
+            getSequence = self.r2.recognize_google(audio, language="fr-FR")
+            print("my sequence " + getSequence)
+            if ("Eva" in getSequence):
+                self.GetAudio("Oui, monsieur?")
+                return self.readyToGetOrder()
+            # self.GetAudio(random.choice(self.ListeLoad))
+
+            self.doIt(getSequence)
+            time.sleep(3)
             self.Listen()
 
-    def GetAudio(self,phrase):
+
+        except sr.UnknownValueError:
+            self.GetAudio("Monsieur je ne vous entends pas très bien, pourriez-vous parler plus fort?")
+            playsound("SFX/Bip.wav")
+            self.readyToGetOrder()
+        except sr.RequestError as e:
+            self.readyToGetOrder()
+            print("failed".format(e))
+
+
+    def doIt(self,getSequence):
+        command = CommandSequence(getSequence)
+        AllInformation = command.guessRecognition(getSequence)
+        self.GetAudio(command.executeSequence(AllInformation))
+        playsound("SFX/Bip.wav")
+        return self.readyToGetOrder()
+
+
+    def GetAudio(self,phrase=""):
 
 
 

@@ -50,7 +50,7 @@ class Command:
         # print('Meilleur match: ' + bestCommand[1])
 
         if self.isExistingCommand(baseCommand) == 0:
-            if(ratio != 1 and ratio >= 0.50):
+            if(biggerRatio != 1 and biggerRatio >= 0.50):
                 print("Ajout d'une ligne à la liste")
                 self.createCommand(commandToCreate)
 

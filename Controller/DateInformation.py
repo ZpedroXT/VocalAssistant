@@ -33,7 +33,7 @@ class DateInformation:
         today = datetime.datetime.today()
         yesterday = today - datetime.timedelta(1)
         print("hier nous etions le: " + datetime.datetime.strftime(yesterday, '%d %B %Y'))
-
+        return "hier nous etions le: " + datetime.datetime.strftime(yesterday, '%d %B %Y')+" Monsieur"
 
     def getDayAtdate(self):
         print()
@@ -41,7 +41,7 @@ class DateInformation:
     def getDifferenceBetweenDate(self,d1, d2):
         d1 = datetime.strptime(d1, "%Y-%m-%d")
         d2 = datetime.strptime(d2, "%Y-%m-%d")
-        return abs((d2 - d1).days)
+        return "Nous devrions être le "+abs((d2 - d1).days)+""
 
 
 
