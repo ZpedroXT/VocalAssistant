@@ -168,7 +168,10 @@ class InsertData:
         sql = "SELECT * FROM recognition where  methodName = %s"
         mycursor.execute(sql, (methodeName.strip(),))
         myresult = mycursor.fetchone()
-        return  myresult[0]
+        try:
+            return  myresult[0]
+        except:
+            return 0
 
 
 

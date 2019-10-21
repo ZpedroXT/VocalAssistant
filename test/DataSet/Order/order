@@ -20,3 +20,6 @@ dis-moi qui je suis|getPresentation
 dis-moi qui suis-je|getPresentation
 qui es-tu qui es-tu|mySelfPresentation
 qui suis-je qui suis-je|getPresentation
+Recherche sur Wikipedia|getSearchWikipedia
+Wikipedia|getSearchWikipedia
+Trouves moi quelque chose sur Wikipedia|getSearchWikipedia

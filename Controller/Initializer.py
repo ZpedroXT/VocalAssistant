@@ -5,7 +5,7 @@ from insertData import InsertData
 class Initializer:
 
     def __init__(self):
-        self.modulesNames = ["DateInformation", "Boss"]
+        self.modulesNames = ["DateInformation", "Boss","WikiSearch"]
 
 
     def createFileCategoryOrder(self):

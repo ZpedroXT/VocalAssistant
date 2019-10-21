@@ -78,6 +78,9 @@ class SpeechGeneration:
         try:
             getSequence = self.r2.recognize_google(audio, language="fr-FR")
             print("my sequence " + getSequence)
+            if ("Eva" in getSequence):
+                self.GetAudio("Oui, monsieur?")
+                return self.readyToGetOrder()
             # self.GetAudio(random.choice(self.ListeLoad))
 
             self.doIt(getSequence)
@@ -102,7 +105,7 @@ class SpeechGeneration:
         return self.readyToGetOrder()
 
 
-    def GetAudio(self,phrase):
+    def GetAudio(self,phrase=""):
 
 
 
