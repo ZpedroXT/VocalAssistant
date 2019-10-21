@@ -1,0 +1,9 @@
+getDayAtdate|DateInformation
+getDifferenceBetweenDate|DateInformation
+getToday|DateInformation
+getTomorrow|DateInformation
+getYesterday|DateInformation
+getPresentation|Boss
+mySelfPresentation|Boss
+whoEva|Boss
+whoIam|Boss
